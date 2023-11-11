@@ -95,5 +95,48 @@ $(document).ready(function () {
 
 });
 
+// Footer code
+let footer = document.querySelector('.footer');
+const createFooter = () => {
+    footer.innerHTML += `
+          <div class="col">
+        <a href="#" class="nav__logo">
+          <img src="assets/DCB-logo-white.png" alt="" />
+        </a>
+        <h4>Contact</h4>
+        <p class="contact-details">
+          <strong><i class="fi fi-sr-call-incoming"></i> </strong>+254 720 797
+          173
+        </p>
+        <p class="contact-details">
+          <strong><i class="fi fi-sr-envelope"></i> </strong>
+          company@dcbconsulting.co.ke
+        </p>
+       <p class="contact-details">
+          <strong><i class="fi fi-sr-marker"></i> </strong>Nairobi, Kenya
+        </p>
+      </div>
 
+      <div class="col">
+        <h4>Links</h4>
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#faq">FAQs</a>
+        <a href="#testimonial">Testimonials</a>
+      </div>
 
+      <div class="col">
+        <div class="social-icons">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fi fi-brands-instagram"></i>
+            <i class="fi fi-brands-facebook"></i>
+            <i class="fi fi-brands-linkedin"></i>
+            <i class="fi fi-brands-twitter-alt"></i>
+          </div>
+        </div>
+      </div>
+    `
+}
+
+createFooter();

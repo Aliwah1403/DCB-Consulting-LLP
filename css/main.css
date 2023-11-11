@@ -879,6 +879,7 @@ section {
 .cta button:hover {
   background: var(--mount-meadow);
   color: #fff;
+  cursor: pointer;
 }
 
 .cta h3 {
