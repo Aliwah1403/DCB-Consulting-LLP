@@ -95,6 +95,18 @@ $(document).ready(function () {
 
 });
 
+// Call to Action code
+let callToAciton = document.querySelector('.cta');
+const createCTA = () => {
+  callToAciton.innerHTML += `
+     <button class="cta-btn">Get started today</button>
+    <h3 class="wow animate__animated animate__bounceIn animate__slow">
+      Ready to grow your business?
+    </h3>
+  `
+}
+createCTA();
+
 // Footer code
 let footer = document.querySelector('.footer');
 const createFooter = () => {
@@ -146,3 +158,19 @@ const createFooter = () => {
 }
 
 createFooter();
+
+
+// Enquiry form popup
+const formPopup = () => {
+  let form = document.querySelector('.form-alert')
+  form.style.display = 'flex';
+
+  let closeBtn = document.querySelector('.close-btn');
+  closeBtn.addEventListener('click', () => form.style.display = null);
+}
+
+// let heroBtn = document.querySelector('.hero-btn');
+// heroBtn.addEventListener('click', () => formPopup());
+
+let ctaBtn = document.querySelector('.cta-btn');
+ctaBtn.addEventListener('click', () => formPopup());

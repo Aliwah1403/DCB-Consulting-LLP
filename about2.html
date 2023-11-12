@@ -47,6 +47,39 @@
 </head>
 
 <body>
+
+  <!-- Enquiry form alert -->
+  <div class="form-alert">
+    <div class="form">
+      <img src="assets/DCB-Logo-GREEN.png" class="logo" alt="logo" />
+      <button class="close-btn">
+        <i class="fi fi-rr-circle-xmark"></i>
+      </button>
+
+      <div class="form-element">
+        <label for="name">Full Name <span>*</span></label>
+        <input type="text" name="name" id="name" required>
+      </div>
+
+      <div class="form-element">
+        <label for="email">Email <span>*</span></label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <div class="form-element">
+        <label for="textarea" required>What services are you interested in? <span>*</span></label>
+        <textarea></textarea>
+      </div>
+
+      <p><span>*</span> Field is required</p>
+
+      <div class="form-element">
+        <button>Submit</button>
+      </div>
+    </div>
+  </div>
+  <!-- Enquiry form alert -->
+
   <header class="header" id="intro">
     <nav class="nav nav-container">
       <div class="nav__data">
@@ -189,10 +222,6 @@
 
   <!-- Call to Action -->
   <section class="cta">
-    <button>Get started today</button>
-    <h3 class="wow animate__animated animate__bounceIn animate__slow">
-      Ready to grow your business?
-    </h3>
   </section>
 
   <!-- Footer -->
