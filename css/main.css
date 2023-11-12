@@ -947,10 +947,22 @@ footer {
   justify-content: space-between;
   padding: 40px 80px;
   background: var(--primary-green);
+  position: relative;
 }
 
 footer .navbar-brand {
   margin-bottom: 30px;
+}
+
+footer .footer-address {
+  font-size: 13px;
+  color: #fff;
+  font-family: var(--text);
+  margin: 0 0 8px 0;
+  position: absolute;
+  /* top: 20px; */
+  bottom: 15px;
+  left: 108px;
 }
 
 footer .contact-details i {
@@ -1099,6 +1111,21 @@ footer .social-icons .icon i {
   .faq .category-header::after,
   .team .category-header::after {
     left: 39%;
+  }
+
+  footer {
+    padding: 20px 40px;
+    flex-direction: column;
+    gap: 25px 0;
+  }
+
+  footer .footer-address {
+    top: 262px;
+    left: 70px;
+  }
+
+  footer .col {
+    margin-bottom: 35px;
   }
 }
 

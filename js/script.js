@@ -2,103 +2,103 @@
 
 $(document).ready(function () {
 
-    // wow initiation
-    new WOW().init();
+  // wow initiation
+  new WOW().init();
 
-    // navigation bar toggle
-    $('#navbar-toggler').click(function () {
-        $('.navbar-collapse').slideToggle(400);
-    });
+  // navigation bar toggle
+  $('#navbar-toggler').click(function () {
+    $('.navbar-collapse').slideToggle(400);
+  });
 
-    // navbar bg change on scroll
-    // $(window).scroll(function () {
-    //     let pos = $(window).scrollTop();
-    //     if (pos >= 100) {
-    //         $('.navbar').addClass('cng-navbar');
-    //     } else {
-    //         $('.navbar').removeClass('cng-navbar');
-    //     }
-    // });
+  // navbar bg change on scroll
+  // $(window).scroll(function () {
+  //     let pos = $(window).scrollTop();
+  //     if (pos >= 100) {
+  //         $('.navbar').addClass('cng-navbar');
+  //     } else {
+  //         $('.navbar').removeClass('cng-navbar');
+  //     }
+  // });
 
-    /*=============== SHOW NAVBAR MENU ===============*/
-    const showMenu = (toggleId, navId) => {
-        const toggle = document.getElementById(toggleId);
-        const nav = document.getElementById(navId)
+  /*=============== SHOW NAVBAR MENU ===============*/
+  const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId);
+    const nav = document.getElementById(navId)
 
-        toggle.addEventListener('click', () => {
-            // Add show-menu class to nav menu
-            nav.classList.toggle('show-menu')
+    toggle.addEventListener('click', () => {
+      // Add show-menu class to nav menu
+      nav.classList.toggle('show-menu')
 
-            // Add show-icon to show and hide the menu icon
-            toggle.classList.toggle('show-icon')
-        })
-    }
+      // Add show-icon to show and hide the menu icon
+      toggle.classList.toggle('show-icon')
+    })
+  }
 
-    showMenu('nav-toggle', 'nav-menu')
+  showMenu('nav-toggle', 'nav-menu')
 
-    // sample video popup
-    // $(document).ready(function () {
-    //     $('.popup-youtube').magnificPopup({
-    //         disableOn: 700,
-    //         type: 'iframe',
-    //         mainClass: 'mfp-fade',
-    //         removalDelay: 160,
-    //         preloader: false,
+  // sample video popup
+  // $(document).ready(function () {
+  //     $('.popup-youtube').magnificPopup({
+  //         disableOn: 700,
+  //         type: 'iframe',
+  //         mainClass: 'mfp-fade',
+  //         removalDelay: 160,
+  //         preloader: false,
 
-    //         fixedContentPos: false
-    //     });
-    // });
+  //         fixedContentPos: false
+  //     });
+  // });
 
-    // team carousel 
-    $('.team .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        dots: true,
-        nav: false,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-
-    // faq accordion
-    $('.faq-head').each(function () {
-        $(this).click(function () {
-            $(this).next().toggleClass('show-faq-content');
-            let icon = $(this).children('span').children("i").attr('class');
-
-            if (icon == "fas fa-plus") {
-                $(this).children('span').html('<i class = "fas fa-minus"></i>');
-            } else {
-                $(this).children('span').html('<i class = "fas fa-plus"></i>');
-            }
-        });
-    });
-
-    // testimonial carousel 
-    $('.testimonial .owl-carousel').owlCarousel({
-        loop: true,
-        autoplay: true,
-        dots: true,
-        nav: false,
+  // team carousel 
+  $('.team .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    dots: true,
+    nav: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
         items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
+  });
+
+  // faq accordion
+  $('.faq-head').each(function () {
+    $(this).click(function () {
+      $(this).next().toggleClass('show-faq-content');
+      let icon = $(this).children('span').children("i").attr('class');
+
+      if (icon == "fas fa-plus") {
+        $(this).children('span').html('<i class = "fas fa-minus"></i>');
+      } else {
+        $(this).children('span').html('<i class = "fas fa-plus"></i>');
+      }
     });
+  });
+
+  // testimonial carousel 
+  $('.testimonial .owl-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    dots: true,
+    nav: false,
+    items: 1
+  });
 
 });
 
 // Footer code
 let footer = document.querySelector('.footer');
 const createFooter = () => {
-    footer.innerHTML += `
+  footer.innerHTML += `
           <div class="col">
         <a href="#" class="nav__logo">
           <img src="assets/DCB-logo-white.png" alt="" />
@@ -113,7 +113,13 @@ const createFooter = () => {
           company@dcbconsulting.co.ke
         </p>
        <p class="contact-details">
-          <strong><i class="fi fi-sr-marker"></i> </strong>Nairobi, Kenya
+          <strong><i class="fi fi-sr-marker"></i> </strong>
+        <div class = "footer-address">
+        Avocado Lanes Home <br>
+         Off Magadi Road,<br>
+         Next to Gems School.<br>
+         Karen, Nairobi.
+        </div>
         </p>
       </div>
 
