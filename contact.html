@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCB Consulting LLP</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="resources/normalize.css" />
+
+    <!-- Flaticon icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-straight/css/uicons-bold-straight.css" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/3d96b122dc.js" crossorigin="anonymous"></script>
+
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="resources/Magnific-Popup-master/dist/magnific-popup.css" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="resources/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" />
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="resources/animate.css-main/animate.css" />
+
+    <!-- custom (main) css -->
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+
+    <!-- Enquiry form alert -->
+    <div class="form-alert">
+        <div class="form">
+            <img src="assets/DCB-Logo-GREEN.png" class="logo" alt="logo" />
+            <button class="close-btn">
+                <i class="fi fi-rr-circle-xmark"></i>
+            </button>
+
+            <div class="form-element">
+                <label for="name">Full Name <span>*</span></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="form-element">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-element">
+                <label for="textarea" required>What services are you interested in? <span>*</span></label>
+                <textarea></textarea>
+            </div>
+
+            <p><span>*</span> Field is required</p>
+
+            <div class="form-element">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- Enquiry form alert -->
+
+    <header class="header" id="intro">
+        <nav class="nav nav-container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <!-- <i class="ri-planet-line"></i> Company -->
+                    <img src="assets/DCB-logo-white.png" alt="" />
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+
+                    <li>
+                        <a href="index.html#services" class="nav__link">Services</a>
+                    </li>
+
+                    <li><a href="index.html#team" class="nav__link">Our Team</a></li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <!-- <li class="dropdown__item">
+            <div class="nav__link">
+              About Us <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-user-line"></i> Company overview
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-lock-line"></i> Our Team
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-message-3-line"></i> Messages
+                </a>
+              </li>
+            </ul>
+          </li> -->
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <!-- <li class="dropdown__item">
+            <div class="nav__link">
+              Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-pie-chart-line"></i> Overview
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-arrow-up-down-line"></i> Transactions
+                </a>
+              </li> -->
+
+                    <!--=============== DROPDOWN SUBMENU ===============-->
+                    <!-- <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                </div>
+
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      <i class="ri-file-list-line"></i> Documents
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      <i class="ri-cash-line"></i> Payments
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      <i class="ri-refund-2-line"></i> Refunds
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li> -->
+
+                    <li>
+                        <a href="index.html#testimonial" class="nav__link">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact section -->
+    <div class="contactUs">
+        <div class="box">
+            <!-- Message Form -->
+            <div class="contact contact-form">
+                <h3>Send us a message</h3>
+                <form action="#">
+
+                    <div class="form-element">
+                        <label for="name">Full Name <span>*</span></label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="textarea" required>Message <span>*</span></label>
+                        <textarea></textarea>
+                    </div>
+
+                    <p><span>*</span> Field is required</p>
+
+                    <div class="form-element">
+                        <button>Submit</button>
+                    </div>
+
+                    <!-- <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="John">
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="text" placeholder="johndoe@gmail.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="text" placeholder="+254712345678">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <input type="text" placeholder="Leave us a messasge">
+                            </div>
+                        </div>
+                    </div> -->
+
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><i class="fi fi-sr-marker"></i></span>
+                        <p>Avocado Lanes Home <br>
+                            Off Magadi Road,<br>
+                            Next to Gems School.<br>
+                            Karen, Nairobi.</p>
+                    </div>
+
+                    <div>
+                        <span><i class="fi fi-sr-mailbox"></i></span>
+                        <p>DCB Consulting <br>
+                            P.o Box 15549-00507.<br>
+                            Karen Hardy.<br>
+                            Nairobi.</p>
+                    </div>
+
+                    <div>
+                        <span><i class="fi fi-sr-envelope"></i></span>
+                        <a href="mailto:company@dcbconsulting.co.ke">company@dcbconsulting.co.ke</a>
+                    </div>
+
+                    <div>
+                        <span><i class="fi fi-sr-call-incoming"></i></span>
+                        <a href="tel:+254 720 797173">+254 720 797173</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.545764376424!2d36.780008969627474!3d-1.3434358528058674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f056b3e58524f%3A0x444b392b5defc457!2sAvocado%20Ln%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1699866921162!5m2!1sen!2ske"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Contact section -->
+
+    <!-- Call to Action -->
+    <section class="cta">
+    </section>
+    <!-- Call to Action -->
+
+    <!-- Footer -->
+    <footer class="footer"></footer>
+    <!-- end of footer -->
+
+    <!-- jQuery -->
+    <script src="resources/jquery-3.5.1.js"></script>
+
+    <!-- magnific popup -->
+    <script src="resources/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+
+    <!-- owl carousel -->
+    <script src="resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+
+    <!-- wow js -->
+    <script src="resources/WOW-master/dist/wow.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
