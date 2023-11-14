@@ -95,6 +95,45 @@ $(document).ready(function () {
 
 });
 
+// DYNAMIC SHARED PAGES
+
+// Enquiry popup form
+let enquiryPopupForm = document.querySelector('.form-alert');
+const createPopupEnquiryForm = () => {
+  enquiryPopupForm.innerHTML += `
+     <form id="enquiryForm" onsubmit="event.preventDefault(); enquiryMail();">
+      <div class="form">
+        <img src="assets/DCB-Logo-GREEN.png" class="logo" alt="logo" />
+        <button class="close-btn">
+          <i class="fi fi-rr-circle-xmark"></i>
+        </button>
+
+        <div class="form-element">
+          <label for="name">Full Name <span>*</span></label>
+          <input type="text" name="from_name" id="from_name" required>
+        </div>
+
+        <div class="form-element">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" name="email" id="email_id" required>
+        </div>
+
+        <div class="form-element">
+          <label for="textarea" required>What services are you interested in? <span>*</span></label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <p><span>*</span> Field is required</p>
+
+        <div class="form-element">
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  `
+}
+createPopupEnquiryForm();
+
 // Call to Action code
 let callToAciton = document.querySelector('.cta');
 const createCTA = () => {
@@ -160,6 +199,9 @@ const createFooter = () => {
 createFooter();
 
 
+
+// WEBSITE FORMS
+
 // Enquiry form popup
 const formPopup = () => {
   let form = document.querySelector('.form-alert')
@@ -174,3 +216,39 @@ const formPopup = () => {
 
 let ctaBtn = document.querySelector('.cta-btn');
 ctaBtn.addEventListener('click', () => formPopup());
+
+
+// Contact form
+const sendMail = () => {
+  let params = {
+    from_name: document.getElementById('from_name').value,
+    email_id: document.getElementById('email_id').value,
+    message: document.getElementById('message').value
+  }
+  emailjs.send("service_fkzne5g", "template_f2x203q", params)
+    .then(function (response) {
+      alert("Message sent")
+
+      document.getElementById('contactForm').reset()
+    }, function (error) {
+      alert("An error occurred, please try again");
+    })
+}
+
+// Enquiry form
+const enquiryMail = () => {
+  let params = {
+    from_name: document.getElementById('from_name').value,
+    email_id: document.getElementById('email_id').value,
+    message: document.getElementById('message').value
+  }
+  emailjs.send("service_fkzne5g", "template_ufgbzn7", params)
+    .then(function (response) {
+      alert("Message sent")
+
+      document.getElementById('enquiryForm').reset()
+    }, function (error) {
+      alert("An error occurred, please try again");
+    })
+}
+
