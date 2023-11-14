@@ -95,6 +95,27 @@ $(document).ready(function () {
 
 });
 
+// SCROLL TO TOP
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  let scrollTopBtn = document.getElementById("scrollTopBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+
+
 // DYNAMIC SHARED PAGES
 
 // Enquiry popup form

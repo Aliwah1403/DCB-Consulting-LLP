@@ -113,6 +113,32 @@ section {
   font-size: 1.1rem;
 }
 
+/* Scroll to top */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--primary-green);
+  opacity: 0.7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 99;
+  transition: var(--transition);
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--mount-meadow);
+}
+
+#scrollTopBtn i {
+  font-size: 20px;
+}
+
 /* Form alert */
 .form-alert {
   width: 100%;
