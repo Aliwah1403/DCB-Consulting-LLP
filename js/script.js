@@ -211,9 +211,6 @@ const formPopup = () => {
   closeBtn.addEventListener('click', () => form.style.display = null);
 }
 
-// let heroBtn = document.querySelector('.hero-btn');
-// heroBtn.addEventListener('click', () => formPopup());
-
 let ctaBtn = document.querySelector('.cta-btn');
 ctaBtn.addEventListener('click', () => formPopup());
 
