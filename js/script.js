@@ -199,8 +199,8 @@ const createFooter = () => {
         <h4>Links</h4>
         <a href="#top">Home</a>
         <a href="#services">Services</a>
+        <a href="#team">Our Team</a>
         <a href="#faq">FAQs</a>
-        <a href="#testimonial">Testimonials</a>
       </div>
 
       <div class="col">
