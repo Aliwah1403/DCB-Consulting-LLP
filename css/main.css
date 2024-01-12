@@ -1019,7 +1019,7 @@ section {
 /* Call to Action */
 .cta {
   padding: 3rem 0;
-  background: #fff;
+  background: var(--white-smoke);
   display: flex;
   justify-content: center;
   align-items: center;
