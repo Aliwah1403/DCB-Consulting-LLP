@@ -177,8 +177,7 @@ const createFooter = () => {
         </a>
         <h4>Contact</h4>
         <p class="contact-details">
-          <strong><i class="fi fi-sr-call-incoming"></i> </strong>+254 720 797
-          173
+          <strong><i class="fi fi-sr-call-incoming"></i> </strong>+254 720 797173 | +254 723 543401
         </p>
         <p class="contact-details">
           <strong><i class="fi fi-sr-envelope"></i> </strong>
