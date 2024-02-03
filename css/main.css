@@ -1476,7 +1476,6 @@ footer .social-icons .icon i {
     height: calc(var(--header-height) + 2rem);
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
   }
 
   .nav__logo {
