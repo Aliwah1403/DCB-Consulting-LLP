@@ -105,7 +105,7 @@ const createPopupEnquiryForm = () => {
   enquiryPopupForm.innerHTML += `
      <form id="enquiryForm" onsubmit="event.preventDefault(); enquiryMail();">
       <div class="form">
-        <img src="assets/DCB-Logo-GREEN.png" class="logo" alt="logo" />
+        <img src="assets/DCB-Logo-GREEN.png" class="logo" alt="DCB Consulting logo" />
         <button class="close-btn">
           <i class="fi fi-rr-circle-xmark"></i>
         </button>
@@ -154,7 +154,7 @@ const createFooter = () => {
   footer.innerHTML += `
           <div class="col">
         <a href="#" class="nav__logo">
-          <img src="assets/DCB-logo-white.png" alt="" />
+          <img src="assets/DCB-logo-white.png" alt="DCB Consulting logo" />
         </a>
         <h4>Contact</h4>
         <p class="contact-details">
