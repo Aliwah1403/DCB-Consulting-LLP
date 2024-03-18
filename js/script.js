@@ -1,37 +1,30 @@
-
-
 $(document).ready(function () {
-
   // wow initiation
   new WOW().init();
 
   // navigation bar toggle
-  $('#navbar-toggler').click(function () {
-    $('.navbar-collapse').slideToggle(400);
+  $("#navbar-toggler").click(function () {
+    $(".navbar-collapse").slideToggle(400);
   });
-
- 
 
   /*=============== SHOW NAVBAR MENU ===============*/
   const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId);
-    const nav = document.getElementById(navId)
+    const nav = document.getElementById(navId);
 
-    toggle.addEventListener('click', () => {
+    toggle.addEventListener("click", () => {
       // Add show-menu class to nav menu
-      nav.classList.toggle('show-menu')
+      nav.classList.toggle("show-menu");
 
       // Add show-icon to show and hide the menu icon
-      toggle.classList.toggle('show-icon')
-    })
-  }
+      toggle.classList.toggle("show-icon");
+    });
+  };
 
-  showMenu('nav-toggle', 'nav-menu')
+  showMenu("nav-toggle", "nav-menu");
 
-  
-
-  // team carousel 
-  $('.team .owl-carousel').owlCarousel({
+  // team carousel
+  $(".team .owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
     autoplay: true,
@@ -40,40 +33,39 @@ $(document).ready(function () {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1
+        items: 1,
       },
       600: {
-        items: 2
+        items: 2,
       },
       1000: {
-        items: 3
-      }
-    }
+        items: 3,
+      },
+    },
   });
 
   // faq accordion
-  $('.faq-head').each(function () {
+  $(".faq-head").each(function () {
     $(this).click(function () {
-      $(this).next().toggleClass('show-faq-content');
-      let icon = $(this).children('span').children("i").attr('class');
+      $(this).next().toggleClass("show-faq-content");
+      let icon = $(this).children("span").children("i").attr("class");
 
       if (icon == "fas fa-plus") {
-        $(this).children('span').html('<i class = "fas fa-minus"></i>');
+        $(this).children("span").html('<i class = "fas fa-minus"></i>');
       } else {
-        $(this).children('span').html('<i class = "fas fa-plus"></i>');
+        $(this).children("span").html('<i class = "fas fa-plus"></i>');
       }
     });
   });
 
-  // testimonial carousel 
-  $('.testimonial .owl-carousel').owlCarousel({
+  // testimonial carousel
+  $(".testimonial .owl-carousel").owlCarousel({
     loop: true,
     autoplay: true,
     dots: true,
     nav: false,
-    items: 1
+    items: 1,
   });
-
 });
 
 // SCROLL TO TOP
@@ -83,7 +75,10 @@ window.onscroll = function () {
 
 function scrollFunction() {
   let scrollTopBtn = document.getElementById("scrollTopBtn");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     scrollTopBtn.style.display = "block";
   } else {
     scrollTopBtn.style.display = "none";
@@ -95,12 +90,10 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
-
-
 // DYNAMIC SHARED PAGES
 
 // Enquiry popup form
-let enquiryPopupForm = document.querySelector('.form-alert');
+let enquiryPopupForm = document.querySelector(".form-alert");
 const createPopupEnquiryForm = () => {
   enquiryPopupForm.innerHTML += `
      <form id="enquiryForm" onsubmit="event.preventDefault(); enquiryMail();">
@@ -132,24 +125,24 @@ const createPopupEnquiryForm = () => {
         </div>
       </div>
     </form>
-  `
-}
+  `;
+};
 createPopupEnquiryForm();
 
 // Call to Action code
-let callToAciton = document.querySelector('.cta');
+let callToAciton = document.querySelector(".cta");
 const createCTA = () => {
   callToAciton.innerHTML += `
      <button class="cta-btn">Get started today</button>
     <h3 class="wow animate__animated animate__bounceIn animate__slow">
       Ready to grow your business?
     </h3>
-  `
-}
+  `;
+};
 createCTA();
 
 // Footer code
-let footer = document.querySelector('.footer');
+let footer = document.querySelector(".footer");
 const createFooter = () => {
   footer.innerHTML += `
           <div class="col">
@@ -194,59 +187,59 @@ const createFooter = () => {
           </div>
         </div>
       </div>
-    `
-}
+    `;
+};
 
 createFooter();
-
-
 
 // WEBSITE FORMS
 
 // Enquiry form popup
 const formPopup = () => {
-  let form = document.querySelector('.form-alert')
-  form.style.display = 'flex';
+  let form = document.querySelector(".form-alert");
+  form.style.display = "flex";
 
-  let closeBtn = document.querySelector('.close-btn');
-  closeBtn.addEventListener('click', () => form.style.display = null);
-}
+  let closeBtn = document.querySelector(".close-btn");
+  closeBtn.addEventListener("click", () => (form.style.display = null));
+};
 
-let ctaBtn = document.querySelector('.cta-btn');
-ctaBtn.addEventListener('click', () => formPopup());
-
+let ctaBtn = document.querySelector(".cta-btn");
+ctaBtn.addEventListener("click", () => formPopup());
 
 // Contact form
 const sendMail = () => {
   let params = {
-    from_name: document.getElementById('from_name').value,
-    email_id: document.getElementById('email_id').value,
-    message: document.getElementById('message').value
-  }
-  emailjs.send("service_fkzne5g", "template_f2x203q", params)
-    .then(function (response) {
-      alert("Message sent")
+    from_name: document.getElementById("from_name").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs.send("service_fkzne5g", "template_f2x203q", params).then(
+    function (response) {
+      alert("Message sent");
 
-      document.getElementById('contactForm').reset()
-    }, function (error) {
+      document.getElementById("contactForm").reset();
+    },
+    function (error) {
       alert("An error occurred, please try again");
-    })
-}
+    }
+  );
+};
 
 // Enquiry form
 const enquiryMail = () => {
   let params = {
-    from_name: document.getElementById('from_name').value,
-    email_id: document.getElementById('email_id').value,
-    message: document.getElementById('message').value
-  }
-  emailjs.send("service_fkzne5g", "template_ufgbzn7", params)
-    .then(function (response) {
-      alert("Message sent")
+    from_name: document.getElementById("from_name").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs.send("service_fkzne5g", "template_ufgbzn7", params).then(
+    function (response) {
+      alert("Message sent");
 
-      document.getElementById('enquiryForm').reset()
-    }, function (error) {
+      document.getElementById("enquiryForm").reset();
+    },
+    function (error) {
       alert("An error occurred, please try again");
-    })
-}
-
+    }
+  );
+};
