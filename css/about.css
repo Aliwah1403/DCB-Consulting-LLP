@@ -15,7 +15,7 @@
   --body-color: hsl(220, 100%, 97%);
 
   --transition: all 0.5s ease-in-out;
-  --transition-3: 0.3s ease;
+  --transition-3: all 0.3s ease-in-out;
 
   --heading: "Montserrat", sans-serif;
   --text: "Lato", sans-serif;
