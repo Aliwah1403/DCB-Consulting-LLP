@@ -173,17 +173,14 @@ const createFooter = () => {
         <a href="#top">Home</a>
         <a href="#services">Services</a>
         <a href="#team">Our Team</a>
-        <a href="#faq">FAQs</a>
+        <a href="blogs.html">Publications</a>
       </div>
 
       <div class="col">
         <div class="social-icons">
           <h4>Follow us</h4>
-          <div class="icon">
-            <i class="fi fi-brands-instagram"></i>
-            <i class="fi fi-brands-facebook"></i>
-            <i class="fi fi-brands-linkedin"></i>
-            <i class="fi fi-brands-twitter-alt"></i>
+          <div class="icon">            
+            <a href='https://www.linkedin.com/company/dcb-consulting-llp' target="_blank"><i class="fi fi-brands-linkedin"></i></a>            
           </div>
         </div>
       </div>
