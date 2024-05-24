@@ -178,11 +178,8 @@ const createFooter = () => {
       <div class="col">
         <div class="social-icons">
           <h4>Follow us</h4>
-          <div class="icon">
-            <i class="fi fi-brands-instagram"></i>
-            <i class="fi fi-brands-facebook"></i>
-            <i class="fi fi-brands-linkedin"></i>
-            <i class="fi fi-brands-twitter-alt"></i>
+          <div class="icon">            
+            <a href='https://www.linkedin.com/company/dcb-consulting-llp' target="_blank"><i class="fi fi-brands-linkedin"></i></a>            
           </div>
         </div>
       </div>
