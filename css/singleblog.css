@@ -67,8 +67,8 @@
   flex-direction: column;
 }
 
-.meta-left p{
-    font-family: var(--heading);
+.meta-left p {
+  font-family: var(--heading);
 }
 
 .meta-left .author-name,
@@ -99,4 +99,10 @@
   flex-direction: column;
   gap: 20px;
   font-family: var(--text);
+}
+
+@media screen and (max-width: 600px) {
+  .single-blog {
+    margin: 7% auto 5%;
+  }
 }
